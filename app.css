@@ -1,0 +1,349 @@
+:root {
+    --clr-purple: #381850;
+    --clr-yellow: #ffff64;
+    --clr-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+    color: var(--clr-yellow);
+    font-family: "Red Hat Display", sans-serif;
+    font-family: "Raleway", sans-serif;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    background: var(--clr-purple);
+    color: #ffffffd8;
+    font-family: "Raleway", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* added for nav-toggle positioning */
+    position: relative;
+}
+
+.list__style {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.header__content {
+    height: fit-content;
+    background: var(--clr-purple);
+    padding: 1.35em 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    /*  relative  */
+    z-index: 1;
+}
+
+.bg__accent--header {
+    background: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: var(--clr-white);
+    color: var(--clr-purple);
+    transition: opacity 250ms ease;
+
+    position: absolute;
+    right: 0;
+}
+
+.bg__accent--nav-toggle {
+    background: var(--clr-purple);
+    color: var(--clr-white);
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: var(--clr-purple);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+
+.bg__accent--hamburger,
+.bg__accent--hamburger::before,
+.bg__accent--hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: var(--clr-white);
+}
+/* made changes here from video
+   to make it more accessible.
+   
+   Works the same :) */
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.nav__list {
+    padding: 1.5em 0 .75em;
+}
+
+.nav__link {
+    color: var(--clr-white);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav__link--clr {
+    color: var(--clr-purple);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.link__item {
+    text-decoration: none;
+}
+
+.logo {
+    width: calc(3rem + 1vw);
+}
+
+.bg__accent {
+    background: var(--clr-white);
+}
+
+.intro {
+    padding: 6em 0 2em;
+}
+
+.heading__clr {
+    color: var(--clr-purple);
+    text-align: center;
+}
+
+.list__item--bg {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: .85rem;
+    background: var(--clr-purple);
+    color: var(--clr-yellow);
+    text-align: center;
+    font-weight: 800;
+    word-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: .75em;
+}
+
+.scroller {
+    max-width: 600px;   
+}
+
+.scroller__inner {
+    padding-block: 1rem;
+    padding-inline: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-duration, forwards) linear infinite;
+
+}
+
+.scroller[data-direction="left"] {
+    --_animation-duration: forwards;
+}
+
+.hero,
+.info {
+    padding-block: 2.25em;
+}
+
+.section__title, .section__title--main {
+    text-transform: uppercase;
+}
+
+.divider {
+    border-bottom: 2px solid var(--clr-white);
+}
+
+.section__title {
+    margin-bottom: .5em;
+    font-size: 1rem;
+}
+
+.hero__content {
+    margin-bottom: 1em;
+}
+
+.hero__content--margin {
+    margin-bottom: 0;
+}
+
+.list__style--marker {
+    list-style-position: outside;
+    padding-left: 1em;
+    margin-bottom: .75em;
+}
+
+
+.services {
+    padding: 6em 0 2em;
+}
+
+.bg__accent--main-title {
+    background: var(--clr-white);
+}
+
+.main__title--style {
+    color: var(--clr-purple);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.services__content {
+    padding-block: 1.5em;
+}
+
+.section__title--main {
+    font-size: 1.5rem;
+    margin-bottom: .8em;
+}
+
+.team {
+    padding: 6em 0 2em;
+}
+
+.team__content {
+    padding-block: 1.5em;
+}
+
+.hero__content--padding {
+    padding: .5em 0 2em;
+}
+
+
+@keyframes scroll {
+    to {
+        transform: translate(-75%);
+        /* transform: translate(calc(-75% - .5rem)); */
+    }
+}
+
