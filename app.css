@@ -434,16 +434,16 @@ body {
     word-spacing: 2.5px;
 }
 
-.team__content {
-    padding-block: 1.5em;
-}
+/* .team__content {
+    padding-block: .75em;
+} */
 
 .content__width {  
     padding-block: 1.25em;
 }
 
 .hero__content--padding {
-    padding: 1.25em 0 2em;
+    padding: 4em 0 2em;
 }
 
 
