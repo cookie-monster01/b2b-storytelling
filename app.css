@@ -228,6 +228,12 @@ body {
     text-decoration: none;
 }
 
+.row__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dropdown {
     position: relative;
 }
