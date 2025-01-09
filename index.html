@@ -11,11 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-
-    <link href="service.html" type="text/html">
-
-    <link href="team.html" type="text/html">
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=stat_minus_1" />
     <link href="app.css" rel="stylesheet">
 
 </head>
@@ -37,7 +34,21 @@
             <nav class="nav">
                 <ul class="nav__list list__style">
                     <li class="nav__item"><a class="nav__link link__item" href="index.html">Home</a></li>
-                    <li class="nav__item"><a class="nav__link link__item" href="service.html">Services</a>
+                    <li class="nav__item dropdown" data-dropdown>
+                        <a class="nav__link link__item dropbtn" data-dropdown-button href="service.html">Services
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#381850">
+                                <path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z" />
+                            </svg>
+
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a class="nav__link link__item" href="#brand-management">Brand Management</a></li>
+                            <li><a class="nav__link link__item" href="#customer-experience">Customer Experience</a></li>
+                            <li><a class="nav__link link__item" href="#digital-marketing">Digital Marketing</a></li>
+                            <li><a class="nav__link link__item" href="#linkedin-management">Personal LinkedIn
+                                    Management</a></li>
+                        </ul>
                     </li>
                     <li class="nav__item"><a class="nav__link link__item" href="team.html">Team</a></li>
                     <li class="nav__item"><a class="nav__link link__item" href="#">Contact</a></li>
@@ -152,7 +163,7 @@
         </div>
     </footer>
 
-    <script src="main.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript" defer></script>
 
 </body>
 

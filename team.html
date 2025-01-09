@@ -11,8 +11,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link href="index.html" type="text/html">
-    <link href="service.html" type="text/html">
     <link href="app.css" rel="stylesheet">
 </head>
 
@@ -25,17 +23,32 @@
                 <a href="index.html"><img class="logo" src="images/Logo (White Background).png" alt="logo"></a>
 
 
-                <button class="nav-toggle bg__accent--nav-toggle" aria-label="open navigation">
-                    <span class="hamburger bg__accent--hamburger"></span>
+                <button class="nav-toggle" aria-label="open navigation">
+                    <span class="hamburger"></span>
                 </button>
             </div>
 
             <nav class="nav">
                 <ul class="nav__list list__style">
-                    <li class="nav__item"><a class="nav__link--clr link__item" href="index.html">Home</a></li>
-                    <li class="nav__item"><a class="nav__link--clr link__item" href="service.html">Services</a></li>
-                    <li class="nav__item"><a class="nav__link--clr link__item" href="team.html">Team</a></li>
-                    <li class="nav__item"><a class="nav__link--clr link__item" href="#">Contact</a></li>
+                    <li class="nav__item"><a class="nav__link link__item" href="index.html">Home</a></li>
+                    <li class="nav__item dropdown" data-dropdown>
+                        <a class="nav__link link__item dropbtn" data-dropdown-button href="service.html">Services
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#381850">
+                                <path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z" />
+                            </svg>
+
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a class="nav__link link__item" href="#brand-management">Brand Management</a></li>
+                            <li><a class="nav__link link__item" href="#customer-experience">Customer Experience</a></li>
+                            <li><a class="nav__link link__item" href="#digital-marketing">Digital Marketing</a></li>
+                            <li><a class="nav__link link__item" href="#linkedin-management">Personal LinkedIn
+                                    Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link link__item" href="team.html">Team</a></li>
+                    <li class="nav__item"><a class="nav__link link__item" href="#">Contact</a></li>
                 </ul>
             </nav>
 
@@ -61,7 +74,8 @@
                         </div>
                     </div>
 
-                    <p class="content__width">Ritwik has more than a decade of experience in the media industry and has worked in B2B sales and
+                    <p class="content__width">Ritwik has more than a decade of experience in the media industry and has
+                        worked in B2B sales and
                         marketing roles with leading companies like New York Times, Dow Jones (Wall Street Journal), and
                         Mintel
                         Research Group in the past. He believes that B2B businesses need to synchronize their customer
@@ -82,7 +96,8 @@
                         </div>
                     </div>
 
-                    <p class="content__width">Hemant has over 30 years of experience in the field of advertising and communication and believes
+                    <p class="content__width">Hemant has over 30 years of experience in the field of advertising and
+                        communication and believes
                         that
                         visual communication should be meaningful and impactful rather than just beautiful. He has
                         worked
