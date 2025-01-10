@@ -117,6 +117,10 @@ body {
     font-size: clamp(1.75rem, 1.515rem + 2.06vw, 2.4rem);
 }
 
+.brand__font {
+    font-family: "Libre Bodoni", serif;
+}
+
 
 .header__content {
     height: fit-content;
@@ -298,7 +302,9 @@ body {
 
 
 .logo {
-    width: calc(3rem + 1.25vw);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--clr-purple);
 }
 
 .bg__accent {
@@ -325,9 +331,10 @@ body {
 }
 
 .brand__name {
-    width: 75%;
-    max-width: 30rem;
-    margin-bottom: 1.5em;
+    font-size: 4rem;
+    font-weight: 900;
+    color:var(--clr-purple);
+    margin-bottom: .6em;
 }
 
 .main__title {
@@ -572,7 +579,7 @@ body {
     }
 
     .dropdown.active .dropdown-content:hover {
-        opacity:1;
+        opacity: 1;
     }
 
     /* .bg__accent--services {
