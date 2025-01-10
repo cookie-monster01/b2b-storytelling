@@ -125,7 +125,7 @@ body {
 .header__content {
     height: fit-content;
     background: #ffffff;
-    padding: 1.35em 0;
+    padding: .55em 0;
     text-align: center;
     width: 100%;
     position: fixed;
@@ -331,10 +331,16 @@ body {
 }
 
 .brand__name {
-    font-size: 4rem;
+    /* font-size: 4.35rem; */
+    font-size: clamp(1.5rem, .465rem + 7.77vw, 4.35rem);
     font-weight: 900;
     color:var(--clr-purple);
-    margin-bottom: .6em;
+    /* text-wrap: nowrap; */
+    /* margin-bottom: .6em; */
+}
+
+.main__title--small {
+    margin: 1em 0 .5em;
 }
 
 .main__title {
