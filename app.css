@@ -641,10 +641,17 @@ label {
 
 .ty__title {
     margin-bottom: 1em;
+    text-transform: uppercase;
     color: var(--clr-purple);
 }
 
 .ty__text {
+    text-align: center;
+    letter-spacing: .2px;
+    font-size: clamp(.925rem, .862rem + .29vw, 1.1rem);
+}
+
+.ty__text:nth-of-type(2) {
     margin-bottom: 1em;
 }
 
