@@ -459,8 +459,7 @@ body {
 
 .services,
 .team,
-.contact,
-.thankyou {
+.contact {
     padding: 6em 0 2em;
 }
 
@@ -628,18 +627,23 @@ label {
     box-shadow: 0 .15em .2em 0 #878772;
 }
 
-.ty__display {
-    background: white;
-    color: #381850;
-    border-radius: .35rem;
-    padding: 5em 1.5em;
+.thankyou {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.ty__display {
+    background: white;
+    color: #381850;
+    border-radius: .35rem;
+    padding: 5em 1.5em;
+}
+
 .ty__title {
+    text-align: center;
     margin-bottom: 1em;
     text-transform: uppercase;
     color: var(--clr-purple);
@@ -654,6 +658,7 @@ label {
 .ty__text:nth-of-type(2) {
     margin-bottom: 1em;
 }
+
 
 @keyframes scroll {
     to {
