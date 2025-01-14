@@ -99,28 +99,55 @@ body {
     padding-left: 0;
 }
 
-.hero__content {
-    font-size: .925rem;
-    font-size: clamp(1rem, .964rem + .18vw, 1.1rem);
-    font-size: clamp(.925rem, .862rem + .29vw, 1.1rem);
-}
-
-.main__title--style {
-    color: var(--clr-purple);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.35rem;
-    font-size: clamp(1.75rem, 1.53rem + 1.9vw, 2.35rem);
-    font-size: clamp(1.7rem, 1.466rem + 1.99vw, 2.35rem);
-    font-size: clamp(1.7rem, 1.446rem + 2.16vw, 2.4rem);
-    font-size: clamp(1.65rem, 1.377rem + 2.25vw, 2.4rem);
-    font-size: clamp(1.75rem, 1.515rem + 2.06vw, 2.4rem);
-}
-
 .brand__font {
     font-family: "Libre Bodoni", serif;
 }
 
+.brand__name {
+    font-size: clamp(1.5rem, .465rem + 7.77vw, 4.35rem);
+    font-weight: 900;
+    color: var(--clr-purple);
+    /* text-wrap: nowrap; */
+    /* margin-bottom: .6em; */
+}
+
+.fs__scroller {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: clamp(1rem, .728rem + 1.36vw, 1.75rem);
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 1.5px;  
+}
+
+.fs__main--title {
+    font-size: clamp(1.75rem, 1.515rem + 2.06vw, 2.4rem);
+    color: var(--clr-purple);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fs__section--header {
+    font-size: clamp(1.325rem, 1.17rem + 1.02vw, 1.75rem);
+    color: var(--clr-white);
+    text-shadow: 1px 0 2px #ffff64;
+    letter-spacing: 1px;
+}
+
+.fs__section--title {
+    font-size: clamp(1rem, .892rem + .54vw, 1.3rem);
+}
+
+.fs__text {
+    font-size: clamp(.925rem, .862rem + .29vw, 1.1rem);
+}
+
+.fs__team--name {
+    font-size: clamp(1rem, .946rem + .27vw, 1.15rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    word-spacing: 2.5px;
+}
 
 .header__content {
     height: fit-content;
@@ -129,10 +156,8 @@ body {
     text-align: center;
     width: 100%;
     position: fixed;
-    /*  relative  */
     z-index: 1;
     filter: drop-shadow(0 .3em .3em #38185076);
-
 }
 
 .row {
@@ -330,15 +355,6 @@ body {
     padding: 2.5em 0 .8em;
 }
 
-.brand__name {
-    /* font-size: 4.35rem; */
-    font-size: clamp(1.5rem, .465rem + 7.77vw, 4.35rem);
-    font-weight: 900;
-    color: var(--clr-purple);
-    /* text-wrap: nowrap; */
-    /* margin-bottom: .6em; */
-}
-
 .main__title--small {
     margin: 1em 0 .5em;
 }
@@ -348,17 +364,8 @@ body {
 }
 
 .list__item--bg {
-    font-family: "Red Hat Display", sans-serif;
-    /* font-size: 1.2rem; 1.75rem */
-    font-size: clamp(1.2rem, 1rem + 1.2vw, 1.75rem);
-    font-size: clamp(1.15rem, .933rem + 1.25vw, 1.75rem);
-    font-size: clamp(1rem, .728rem + 1.36vw, 1.75rem);
     background: var(--clr-purple);
     color: var(--clr-yellow);
-    text-align: center;
-    font-weight: 800;
-    word-spacing: 1.5px;
-    text-transform: uppercase;
     padding: .75em;
 }
 
@@ -417,15 +424,15 @@ body {
 }
 
 .section__title {
-    margin-bottom: .5em;
-    font-size: 1.1rem;
-    font-size: clamp(1rem, .892rem + .54vw, 1.3rem);
+    margin-bottom: .65em;
+    /* font-size: 1.1rem; */
+    /* font-size: clamp(1rem, .892rem + .54vw, 1.3rem); */
 }
 
 .hero__content {
     /* max-width: 75%; */
     /* margin-inline: auto; */
-    margin-bottom: 1em;
+    margin-bottom: 1.25em;
 }
 
 .hero__content--margin {
@@ -498,14 +505,6 @@ body {
 }
 
 .section__title--main {
-    color: var(--clr-white);
-    text-shadow: 1px 0 2px #ffff64;
-    /* font-size: 1.75rem; */
-    /* font-size: clamp(1.45rem, 1.34rem + .79vw, 1.75rem); */
-    font-size: clamp(1.375rem, 1.24rem + .93vw, 1.75rem);
-    font-size: clamp(1.35rem, 1.205rem + .98vw, 1.75rem);
-    font-size: clamp(1.325rem, 1.17rem + 1.02vw, 1.75rem);
-    letter-spacing: 1px;
     margin-bottom: 1.2em;
 }
 
@@ -560,15 +559,6 @@ body {
     padding: .5em .75em;
     border-bottom-left-radius: .75rem;
     border-top-right-radius: .75rem;
-}
-
-.text__style {
-    font-size: 1.15rem;
-    /* font-size: clamp(1rem, .892rem + .54vw, 1.3rem); */
-    font-size: clamp(1rem, .946rem + .27vw, 1.15rem);
-    font-weight: 800;
-    text-transform: uppercase;
-    word-spacing: 2.5px;
 }
 
 .content__width {
@@ -652,13 +642,15 @@ label {
 .ty__text {
     text-align: center;
     letter-spacing: .2px;
-    font-size: clamp(.925rem, .862rem + .29vw, 1.1rem);
 }
 
 .ty__text:nth-of-type(2) {
     margin-bottom: 1em;
 }
 
+.req {
+    color: red;
+}
 
 @keyframes scroll {
     to {
