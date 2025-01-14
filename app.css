@@ -459,7 +459,8 @@ body {
 
 .services,
 .team,
-.contact {
+.contact,
+.thankyou {
     padding: 6em 0 2em;
 }
 
@@ -524,10 +525,6 @@ body {
     box-shadow: 0 .1em .3em .05em #b1a2bb;
     border-radius: .35rem;
 }
-
-/* .team {
-    padding: 6em 0 2em;
-} */
 
 .team__content {
     display: grid;
@@ -629,6 +626,26 @@ label {
     background: var(--clr-yellow);
     opacity: .9;
     box-shadow: 0 .15em .2em 0 #878772;
+}
+
+.ty__display {
+    background: white;
+    color: #381850;
+    border-radius: .35rem;
+    padding: 5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ty__title {
+    margin-bottom: 1em;
+    color: var(--clr-purple);
+}
+
+.ty__text {
+    margin-bottom: 1em;
 }
 
 @keyframes scroll {
