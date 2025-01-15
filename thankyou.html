@@ -15,6 +15,43 @@
 </head>
 
 <body>
+    <header class="header__content bg__accent--header">
+
+        <div class="container display__lg-screen">
+            <div class="row">
+                <a href="index.html" class="link__item"><p class="logo brand__font">B2B</p></a>
+
+
+                <button class="nav-toggle" aria-label="open navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list list__style">
+                    <li class="nav__item"><a class="nav__link link__item" href="index.html">Home</a></li>
+                    <li class="nav__item dropdown" data-dropdown>
+                        <a class="nav__link link__item dropbtn row__icon" data-dropdown-button
+                            href="service.html">Services<svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#381850">
+                                <path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a class="nav__link link__item" href="#brand-management">Brand Management</a></li>
+                            <li><a class="nav__link link__item" href="#customer-experience">Customer Experience</a></li>
+                            <li><a class="nav__link link__item" href="#digital-marketing">Digital Marketing</a></li>
+                            <li><a class="nav__link link__item" href="#linkedin-management">LinkedIn Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link link__item" href="team.html">Team</a></li>
+                    <li class="nav__item"><a class="nav__link link__item" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
     <main class="thankyou">
         <div class="container ty__display fs__text">
             <h1 class="ty__title fs__main--title">Thank you!</h1>
@@ -24,6 +61,16 @@
             <p class="ty__text"><strong>Have a great day!</strong></p>
         </div>
     </main>
+
+    <footer class="footer footer__position">
+        <div class="container social">
+            <a href="https://in.linkedin.com/company/b2b-storytelling" target="_blank"><img class="icon__size"
+                    src="images/linkedin-brands-solid.svg" alt="linkedin"></a>
+            <a href="https://www.facebook.com/www.b2bstorytelling.in/" target="_blank"><img class="icon__size"
+                    src="images/square-facebook-brands-solid.svg" alt="facebook"></a>
+        </div>
+    </footer>
+    <script src="main.js" type="text/javascript"></script>
 </body>
 
 </html>
