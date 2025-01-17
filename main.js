@@ -9,7 +9,6 @@ navToggle.addEventListener("click", () => {
 
 
 document.addEventListener("click", (e) => {
-  const marginDiv = document.getElementById("margin");
 
   const isDropdownButton = e.target.matches("[data-dropdown-button]");
   if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
@@ -18,14 +17,6 @@ document.addEventListener("click", (e) => {
   if (isDropdownButton) {
     currentDropdown = e.target.closest("[data-dropdown]");
     currentDropdown.classList.toggle("active");
-
-    if (currentDropdown.classList.contains("active")) {
-      marginDiv.style.marginTop = "3.5em";
-      marginDiv.style.marginBottom = "1.5em";
-    } else {
-      marginDiv.style.marginTop = "0";
-      marginDiv.style.marginBottom = "0";
-    }
   }
 
   document.querySelectorAll("[data-dropdown].active").forEach((dropdown) => {
@@ -34,6 +25,25 @@ document.addEventListener("click", (e) => {
   });
 });
 
+
+
+
+const tabs = document.querySelectorAll("[data-tab-target]");
+const tabContents = document.querySelectorAll("[data-tab-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("active");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tab.classList.add("active");
+    target.classList.add("active");
+  });
+});
 
 
 
@@ -55,3 +65,5 @@ function addAnimation() {
     });
   });
 }
+
+
