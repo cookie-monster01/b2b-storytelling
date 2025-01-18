@@ -354,6 +354,10 @@ li.nav__item:hover {
     display: block;
 }
 
+.tab {
+    cursor: pointer;
+}
+
 .tab.active {
     cursor: pointer;
     background: #fefe95;
@@ -483,7 +487,7 @@ li.nav__item:hover {
 }
 
 .hero__content,
-.hero__service {
+.hero__content--service {
     /* max-width: 75%; */
     /* margin-inline: auto; */
     margin-bottom: 1.25em;
@@ -527,11 +531,11 @@ li.nav__item:hover {
     padding: 2em 0 1em;
 }
 
-.services__grid {
+/* .services__grid {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 
-}
+} */
 
 .services__content {
     /* place-self: center;
@@ -539,12 +543,13 @@ li.nav__item:hover {
     grid-template-rows: subgrid;
     place-items: center;
     justify-content: center; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 1.5em 0 2em;
-    border-bottom: 2px solid var(--clr-white);
+    padding: 4.5em 0 2em;
+    /* border-bottom: 2px solid var(--clr-white); */
 
 }
 
@@ -747,10 +752,14 @@ label {
     .services,
     .team,
     .contact {
-        /* padding: 0 0 2em; */
+        padding: 0 0 2em;
         padding-top: 2.55em;
     }
-    
+
+    /* .services: {
+        padding-top: 2.55em;
+    } */
+
     .hero__content,
     .hero__content--service {
         width: 75%;
@@ -775,7 +784,6 @@ label {
         display: flex;
         transform: translateX(-15.75rem);
     }
-
 
     .dropdown.active .dropdown-content .nav__link {
         text-wrap: nowrap;
@@ -819,7 +827,7 @@ label {
 
     .form__display {
         padding-block: 1.75em;
-    } 
+    }
 
 
 
