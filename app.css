@@ -754,6 +754,7 @@ label {
     .contact {
         padding: 0 0 2em;
         padding-top: 2.55em;
+        padding-top: 1.5em;
     }
 
     /* .services: {
@@ -771,7 +772,8 @@ label {
         position: absolute;
         width: fit-content;
         left: -8rem;
-        top: calc(100% + .3rem);
+        /* top: calc(100% + .3rem); */
+        top: calc(100% - .5rem);
         margin-inline: auto;
         transform: translateX(0);
     }
@@ -783,6 +785,7 @@ label {
     .dropdown.active>.dropbtn+.dropdown-content {
         display: flex;
         transform: translateX(-15.75rem);
+        border-bottom: none;
     }
 
     .dropdown.active .dropdown-content .nav__link {
