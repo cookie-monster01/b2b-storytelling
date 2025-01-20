@@ -1,6 +1,7 @@
 :root {
     --clr-purple: #381850;
-    --clr-purple-opacity: #381850f0;
+    --clr-purple-opacity: #38185076; 
+    /* #381850f0 */
     --clr-yellow: #ffff64;
     --clr-yellow-light: #fefe95;
     --clr-white: #ffffff;
@@ -161,8 +162,9 @@ body {
     text-align: center;
     position: fixed;
     z-index: 1;
-    filter: drop-shadow(0 .3em .3em #38185076);
+    filter: drop-shadow(0 .3em .3em var(--clr-purple-opacity));
 }
+/* #38185076 */
 
 .row {
     display: flex;
@@ -400,9 +402,6 @@ li.nav__item:active {
     grid-template-rows: repeat(2, minmax(auto-fit, 1fr));
     place-content: center;
     place-items: center;
-    /* padding: 6em 0 1em; */
-    /* height: calc(18.5rem + 13vh);
-    padding-bottom: 1em; */
 }
 
 .bg__accent {
@@ -500,8 +499,6 @@ li.nav__item:active {
 
 .hero__content,
 .hero__content--service {
-    /* max-width: 75%; */
-    /* margin-inline: auto; */
     margin-bottom: 1.25em;
 }
 
@@ -561,8 +558,7 @@ li.nav__item:active {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-    padding: 1.5em 0 2em;
-    padding: 4.5em 0 2em;
+    padding: 2.5em 0 2em;
     /* border-bottom: 2px solid var(--clr-white); */
 
 }
@@ -768,6 +764,7 @@ label {
         padding-block: 3em;
     }
 
+    .intro,
     .services,
     .team,
     .contact {
@@ -775,10 +772,6 @@ label {
         padding-top: 2.55em;
         padding-top: 1.5em;
     }
-
-    /* .services: {
-        padding-top: 2.55em;
-    } */
 
     .hero__content,
     .hero__content--service {
@@ -851,47 +844,6 @@ label {
     .form__display {
         padding-block: 1.75em;
     }
-
-
-
-    /* .display__lg-screen {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    .services,
-    .team,
-    .contact {
-        padding-top: 1em;
-        padding-bottom: 2em;
-    }
-
-
-    .hero__content,
-    .hero__content--service {
-        width: 75%;
-        padding-block: 1.25em;
-        margin: 0 auto;
-    }
-
-    .content__width {
-        padding-block: 0;
-        width: 48%;
-    }
-
-    .contact__content {
-        padding: 4.5em 0 2em;
-    }
-
-    .contact__text {
-        text-align: center;
-    }
-
-    .form__display {
-        padding-block: 1.75em;
-    } */
-
 
 }
 
