@@ -1,6 +1,8 @@
 :root {
     --clr-purple: #381850;
+    --clr-purple-opacity: #381850f0;
     --clr-yellow: #ffff64;
+    --clr-yellow-light: #fefe95;
     --clr-white: #ffffff;
 }
 
@@ -130,7 +132,7 @@ body {
 .fs__section--header {
     font-size: clamp(1.325rem, 1.17rem + 1.02vw, 1.75rem);
     color: var(--clr-white);
-    text-shadow: 1px 0 2px #ffff64;
+    text-shadow: 1px 0 2px var(--clr-yellow);
     letter-spacing: 1px;
 }
 
@@ -153,7 +155,7 @@ body {
 .header__content {
     width: 100%;
     height: fit-content;
-    background: #ffffff;
+    background: var(--clr-white);
     padding: .55em 0;
     text-align: center;
     position: fixed;
@@ -274,7 +276,7 @@ li.nav__item:active {
 .dropbtn {
     font: inherit;
     font-weight: 900;
-    color: #381850;
+    color: var(--clr-purple);
     background: none;
     text-decoration: none;
     text-transform: uppercase;
@@ -301,7 +303,7 @@ li.nav__item:active {
     display: block;
     transform: translateY(0);
     pointer-events: auto;
-    border: 1px solid #381850;
+    border: 1px solid var(--clr-purple);
 }
 
 .dropdown.active .dropbtn {
@@ -337,9 +339,10 @@ li.nav__item:active {
     text-align: center;
 }
 
-.dropdown.active li:hover {
-    background: #dbdbdc;
-    box-shadow: 0 .25em .25em 0 #381850f0;
+.dropdown.active li:hover:not(.dropdown-content li a) {
+    background: var(--clr-white);
+    opacity: .5;
+    box-shadow: 0 .25em .25em 0 var(--clr-purple-opacity);
     border-radius: .25rem;
     width: 100%;
 }
@@ -362,8 +365,8 @@ li.nav__item:active {
 
 .tab.active {
     cursor: pointer;
-    background: #fefe95;
-    box-shadow: 0 .15em .25em 0 #381850f0;
+    background: var(--clr-yellow-light);
+    box-shadow: 0 .15em .25em 0 var(--clr-purple-opacity);
     border-radius: .25rem;
     width: 100%;
 } */
@@ -373,10 +376,6 @@ li.nav__item:active {
     font-size: 2rem;
     font-weight: 900;
     color: var(--clr-purple);
-}
-
-.bg__accent {
-    background: #ffffff;
 }
 
 .intro,
@@ -397,15 +396,27 @@ li.nav__item:active {
 
 
 .intro {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(auto-fit, 1fr));
+    place-content: center;
+    place-items: center;
     /* padding: 6em 0 1em; */
-    height: calc(18.5rem + 13vh);
-    padding-bottom: 1em;
+    /* height: calc(18.5rem + 13vh);
+    padding-bottom: 1em; */
+}
+
+.bg__accent {
+    width: 100vw;
+    min-height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--clr-white);
 }
 
 .intro__grid {
     display: grid;
-    place-content: center;
-    place-items: center;
+    grid-template-rows: subgrid;
     overflow-x: hidden;
 }
 
@@ -413,11 +424,11 @@ li.nav__item:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.5em 0 .8em;
+    padding: .8em 0;
 }
 
 .main__title--small {
-    margin: 1em 0 .5em;
+    margin: 1.5em 0 1em;
 }
 
 .main__title {
@@ -463,7 +474,7 @@ li.nav__item:active {
 
 .about__grid {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(auto-fit, 1fr));
     align-items: center;
 }
 
@@ -484,8 +495,6 @@ li.nav__item:active {
 
 .section__title {
     margin-bottom: .65em;
-    /* font-size: 1.1rem; */
-    /* font-size: clamp(1rem, .892rem + .54vw, 1.3rem); */
 }
 
 .hero__content,
@@ -495,8 +504,8 @@ li.nav__item:active {
     margin-bottom: 1.25em;
 }
 
-.hero__content--margin {
-    margin-bottom: 0;
+.hero__content--team:last-of-type, .services__content:last-of-type {
+    border-bottom: none;
 }
 
 .list__style--marker {
@@ -570,7 +579,7 @@ li.nav__item:active {
 }
 
 .item__bg {
-    border: .5px solid #fafa93;
+    border: .5px solid var(--clr-yellow);
     border-radius: .5rem;
     padding: .35em .5em;
 }
@@ -620,12 +629,13 @@ li.nav__item:active {
     padding-block: 1.25em;
 }
 
-.hero__content--padding {
+.hero__content--team {
     padding: 4em 0 2em;
     border-bottom: 2px solid var(--clr-white);
 }
 
 .contact__content {
+    padding: 4em 0 2em;
     border-bottom: none;
 }
 
@@ -809,7 +819,10 @@ label {
     .dropdown.active li:hover {
         opacity: 1;
         background: white;
+         background: var(--clr-white);
     } */
+
+
 
     .display__lg-screen {
         display: flex;
