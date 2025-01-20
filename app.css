@@ -4,6 +4,7 @@
     --clr-yellow: #ffff64;
     --clr-yellow-light: #fefe95;
     --clr-white: #ffffff;
+    --clr-text: #ffffffd8;
 }
 
 *,
@@ -83,7 +84,7 @@ h6 {
 
 body {
     background: var(--clr-purple);
-    color: #ffffffd8;
+    color: var(--clr-text);
     font-family: "Raleway", sans-serif;
     font-family: "Red Hat Display", sans-serif;
 }
@@ -823,7 +824,6 @@ label {
         opacity: 1;
         background: var(--clr-white);
     }
-
 
 
     .display__lg-screen {
