@@ -263,7 +263,7 @@ li.nav__item:active {
     text-decoration: none;
 }
 
-/* .row__icon {
+.row__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,9 +318,9 @@ li.nav__item:active {
 
 .nav__item:is([data-dropdown]) {
     opacity: 1;
-} */
+}
 
-/* .dropbtn svg {
+.dropbtn svg {
     rotate: 0deg;
     display: inline-block;
     transition: .3s ease;
@@ -357,8 +357,8 @@ li.nav__item:active {
 
 .active[data-tab-content] {
     display: block;
-} */
-/* 
+}
+
 .tab {
     cursor: pointer;
 }
@@ -369,7 +369,7 @@ li.nav__item:active {
     box-shadow: 0 .15em .25em 0 var(--clr-purple-opacity);
     border-radius: .25rem;
     width: 100%;
-} */
+}
 
 
 .logo {
@@ -473,6 +473,7 @@ li.nav__item:active {
 
 
 .about__grid {
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(2, minmax(auto-fit, 1fr));
     align-items: center;
@@ -504,7 +505,8 @@ li.nav__item:active {
     margin-bottom: 1.25em;
 }
 
-.hero__content--team:last-of-type, .services__content:last-of-type {
+.hero__content--team:last-of-type,
+.services__content:last-of-type {
     border-bottom: none;
 }
 
@@ -549,6 +551,7 @@ li.nav__item:active {
 }
 
 .services__content {
+    width: 100%;
     place-self: center;
     display: grid;
     grid-template-rows: subgrid;
@@ -618,8 +621,8 @@ li.nav__item:active {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: white;
-    color: #381850;
+    background: var(--clr-white);
+    color: var(--clr-purple);
     padding: .5em .75em;
     border-bottom-left-radius: .75rem;
     border-top-right-radius: .75rem;
@@ -696,8 +699,8 @@ label {
 }
 
 .ty__display {
-    background: white;
-    color: #381850;
+    background: var(--clr-white);
+    color: var(--clr-purple);
     border-radius: .35rem;
     padding: 5em 1.5em;
 }
@@ -780,7 +783,7 @@ label {
         margin: 0 auto;
     }
 
-    /* .dropdown-content {
+    .dropdown-content {
         position: absolute;
         width: fit-content;
         left: -8rem;
@@ -818,9 +821,8 @@ label {
 
     .dropdown.active li:hover {
         opacity: 1;
-        background: white;
-         background: var(--clr-white);
-    } */
+        background: var(--clr-white);
+    }
 
 
 
@@ -890,7 +892,7 @@ label {
 
 }
 
-
+/* 
 @media (min-width: 1200px) {
 
     .container__layout {
@@ -988,4 +990,4 @@ label {
         transform: translateX(20px);
     }
 
-}
+} */
