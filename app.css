@@ -890,17 +890,50 @@ label {
         border: none;
         font-size: .875rem;
         font-weight: 600;
+        transform: translateX(0) scaleX(1);
+        transition: all 1000ms step-start allow-discrete;
     }
 
     .tab-btn a {
-        color: #ffffffd8;
+        color: var(--clr-text);
         text-transform: uppercase;
         letter-spacing: .35px;
         transition: all 200ms ease-in allow-discrete;
     }
 
+
+    span.line__style {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 100;
+        line-height: 0;
+        margin-right: 10px;
+    }
+
+    .tab-btn span:hover,
+    .tab-btn span:focus,
+    .tab-btn span:active {
+        color: var(--clr-white);
+        text-shadow: 0 .35px .35px var(--clr-yellow);
+        margin-right: 32px;
+        transform: scaleX(3);
+    }
+
+
+    .tab-btn:hover,
+    .tab-btn:focus,
+    .tab-btn:active {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--clr-white);
+        text-shadow: .35px 0 .5px var(--clr-yellow);
+        transform: translateX(20px);
+        transform-box: view-box;
+    }
+
+
     .highlight {
-        padding: 1.8em;
+        padding: 1.8em 2em;
     }
 
     .hero__content--service {
@@ -909,7 +942,7 @@ label {
 
     .services__content:target {
         height: 100%;
-        box-shadow: 0 .05em .5em .05em var(--clr-white);
+        box-shadow: 0 0 .5em 0 var(--clr-white);
         border-radius: .35rem;
         border: none;
     }
@@ -918,37 +951,5 @@ label {
         border: none;
     }
 
-    span.line__style {
-        display: inline-block;
-        font-size: 1.5rem;
-        font-weight: 100;
-        line-height: 0;
-        margin-right: 10px;
-        transition: all 150ms step-start allow-discrete;
-    }
-
-    .tab-btn a:hover span,
-    .tab-btn a:focus span,
-    .tab-btn a:active span {
-        color: var(--clr-white);
-        text-shadow: 0 .35px .35px var(--clr-yellow);
-        margin-right: 27px;
-        transform: scaleX(3);
-    }
-
-    .tab-btn a:hover,
-    .tab-btn a:focus,
-    .tab-btn a:active {
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--clr-white);
-        text-shadow: .35px 0 .5px var(--clr-yellow);
-    }
-
-    .tab-btn:hover,
-    .tab-btn:focus,
-    .tab-btn:active {
-        transform: translateX(20px);
-    }
-
 }
+    
