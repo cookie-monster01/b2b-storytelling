@@ -340,7 +340,7 @@ li.nav__item:active {
     text-align: center;
 }
 
-.dropdown.active li:hover:not(.dropdown-content li a) {
+.dropdown.active li:not(.dropdown.active .nav__link):hover {
     background: var(--clr-white);
     opacity: .5;
     box-shadow: 0 .25em .25em 0 var(--clr-purple-opacity);
