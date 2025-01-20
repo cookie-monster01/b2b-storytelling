@@ -407,7 +407,7 @@ li.nav__item:active {
 
 .bg__accent {
     width: 100vw;
-    min-height: 26rem;
+    min-height: 24rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -762,6 +762,10 @@ label {
     .nav__item+.nav__item {
         margin-top: 0;
         margin-left: 1.5em;
+    }
+
+    .intro__grid {
+        padding-block: 3em;
     }
 
     .services,
