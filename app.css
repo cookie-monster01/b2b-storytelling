@@ -1,6 +1,6 @@
 :root {
     --clr-purple: #381850;
-    --clr-purple-opacity: #38185076; 
+    --clr-purple-opacity: #38185076;
     /* #381850f0 */
     --clr-yellow: #ffff64;
     --clr-yellow-light: #fefe95;
@@ -164,6 +164,7 @@ body {
     z-index: 1;
     filter: drop-shadow(0 .3em .3em var(--clr-purple-opacity));
 }
+
 /* #38185076 */
 
 .row {
@@ -266,7 +267,7 @@ li.nav__item:active {
     text-decoration: none;
 }
 
-.row__icon {
+/* .row__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,7 +372,7 @@ li.nav__item:active {
     box-shadow: 0 .15em .25em 0 var(--clr-purple-opacity);
     border-radius: .25rem;
     width: 100%;
-}
+} */
 
 
 .logo {
@@ -549,17 +550,17 @@ li.nav__item:active {
 
 .services__content {
     width: 100%;
-    /* place-self: center;
+    place-self: center;
     display: grid;
     grid-template-rows: subgrid;
     place-items: center;
-    justify-content: center; */
+    justify-content: center;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
     padding: 2.5em 0 2em;
-    /* border-bottom: 2px solid var(--clr-white); */
+    border-bottom: 2px solid var(--clr-white);
 
 }
 
@@ -764,14 +765,14 @@ label {
         padding-block: 3em;
     }
 
-    .intro,
+    /* .intro,
     .services,
     .team,
     .contact {
         padding: 0 0 2em;
         padding-top: 2.55em;
         padding-top: 1.5em;
-    }
+    } */
 
     .hero__content,
     .hero__content--service {
@@ -780,7 +781,7 @@ label {
         margin: 0 auto;
     }
 
-    .dropdown-content {
+    /* .dropdown-content {
         position: absolute;
         width: fit-content;
         left: -8rem;
@@ -819,7 +820,7 @@ label {
     .dropdown.active li:hover {
         opacity: 1;
         background: var(--clr-white);
-    }
+    } */
 
 
     .display__lg-screen {
@@ -847,7 +848,7 @@ label {
 
 }
 
-/* 
+
 @media (min-width: 1200px) {
 
     .container__layout {
@@ -899,7 +900,7 @@ label {
     }
 
     .highlight {
-        padding: 2.25em;
+        padding: 1.8em;
     }
 
     .hero__content--service {
@@ -910,6 +911,11 @@ label {
         height: 100%;
         box-shadow: 0 .05em .5em .05em var(--clr-white);
         border-radius: .35rem;
+        border: none;
+    }
+
+    .services__content:has(+ .services__content:target) {
+        border: none;
     }
 
     span.line__style {
@@ -945,4 +951,4 @@ label {
         transform: translateX(20px);
     }
 
-} */
+}
