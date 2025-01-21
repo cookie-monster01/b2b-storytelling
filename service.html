@@ -69,27 +69,38 @@
         <div class="bg__accent--main-title bg__accent--services">
             <h1 class="main__title--services fs__main--title" id="tabs-title">Services we offer</h1>
         </div>
-        <!-- id="tabs-title -->
 
         <div class="main__services--grid container__layout">
 
             <div class="container tabs-container" aria-labelledby="tabs-title">
-                <div class="tab-btns tab__list" role="tablist">
-                    <button class="tab-btn"><a class="link__item" id="tab-1" href="#brand-management"><span class="line__style" part="line">&horbar;</span>Brand
-                            Management</a></button>
-                    <button class="tab-btn"><a class="link__item" id="tab-2" href="#customer-experience"><span class="line__style" part="line">&horbar;</span>Customer
-                            Experience</a></button>
-                    <button class="tab-btn"><a class="link__item" id="tab-3" href="#digital-marketing"><span class="line__style" part="line">&horbar;</span>Digital
-                            Marketing</a></button>
-                    <button class="tab-btn"><a class="link__item" id="tab-4" href="#linkedin-management"><span class="line__style" part="line">&horbar;</span>LinkedIn
-                            Management</a></button>
-                </div>
-            </div>
+                <nav class="tab__list">
 
+                    <div class="tab-btns list__style">
+
+                        <button class="tab-btn"><a class="tab-btn link__item active" tabindex="0"
+                                type="button" href="#brand-management"><span class="line__style">&horbar;</span>Brand Management</a>
+                        </button>
+
+                        <button class="tab-btn"><a class="tab-btn link__item" tabindex="-1"
+                                type="button" href="#customer-experience"><span class="line__style">&horbar;</span>Customer
+                                Experience</a>
+                        </button>
+
+                        <button class="tab-btn"><a class="tab-btn link__item" tabindex="-1"
+                                type="button" href="#digital-marketing"><span class="line__style">&horbar;</span>Digital Marketing</a>
+                        </button>
+
+                        <button class="tab-btn"><a class="tab-btn link__item" tabindex="-1"
+                                type="button" href="#linkedin-management"><span class="line__style">&horbar;</span>LinkedIn
+                                Management</a>
+                        </button>
+                    </div>
+                </nav>
+            </div>
 
             <div class="services__grid tab-content">
 
-                <section class="services__content active" data-tab-content  id="brand-management">
+                <article class="services__content active" tabindex="0" data-tab-content id="brand-management">
 
                     <div class="highlight container">
 
@@ -98,10 +109,12 @@
                         <div class="hero__content--service fs__text">
                             <h3 class="section__title fs__section--title">Our approach to brand management?
                             </h3>
-                            <p>In B2B businesses, a brand is more than just a name, symbol, or term. It represents the
+                            <p>In B2B businesses, a brand is more than just a name, symbol, or term. It represents
+                                the
                                 goodwill
                                 an
-                                organization builds by delivering differentiated products, services and overall customer
+                                organization builds by delivering differentiated products, services and overall
+                                customer
                                 experience.
                                 A brand is shaped in the minds of customers based on their experiences. So, it's
                                 essential
@@ -128,9 +141,10 @@
                         </div>
 
                     </div>
-                </section>
+                </article>
 
-                <section class="services__content" data-tab-content  id="customer-experience">
+                <article class="services__content" name="customer-experience" tabindex="0" data-tab-content
+                    id="customer-experience">
                     <div class="highlight container">
                         <h2 class="section__title--main fs__section--header">Customer Experience</h2>
                         <div class="hero__content--service fs__text">
@@ -139,7 +153,8 @@
                             <p>Is your value proposition, like "best after-sales service" or "superior product
                                 performance,"
                                 truly
-                                delivered on the ground? Does your customer's perception match your brand positioning?
+                                delivered on the ground? Does your customer's perception match your brand
+                                positioning?
                                 Customer
                                 experience aligns your buyer's journey with your value proposition to eliminate any
                                 disconnect.
@@ -161,9 +176,10 @@
                                 identify gaps and suggest improvements, deploying technology when needed.</p>
                         </div>
                     </div>
-                </section>
+                </article>
 
-                <section class="services__content" data-tab-content  id="digital-marketing">
+                <article class="services__content" name="digital-marketing" tabindex="0" data-tab-content
+                    id="digital-marketing">
 
                     <div class="highlight container">
 
@@ -171,7 +187,8 @@
                         <div class="hero__content--service fs__text">
                             <h3 class="section__title fs__section--title">What services do we offer?
                             </h3>
-                            <p>Everything from website, content marketing, paid media, email marketing to social media
+                            <p>Everything from website, content marketing, paid media, email marketing to social
+                                media
                                 management.
                                 Our
                                 activities are essentially linked to the overarching marketing strategy. </p>
@@ -183,7 +200,8 @@
                             <p>For us, digital marketing starts with mapping your customers' journey across digital
                                 platforms
                                 like
-                                websites, social media, mobile apps, and third-party media to gather insights. Once we
+                                websites, social media, mobile apps, and third-party media to gather insights. Once
+                                we
                                 understand
                                 the objectives, these insights are put into action with the help of focused and
                                 technically
@@ -192,19 +210,23 @@
                         </div>
 
                     </div>
-                </section>
+                </article>
 
-                <section class="services__content" data-tab-content  id="linkedin-management">
+                <article class="services__content" name="linkedin-management" tabindex="0" data-tab-content
+                    id="linkedin-management">
                     <div class="highlight container">
                         <h2 class="section__title--main fs__section--header">Personal LinkedIn Management</h2>
                         <div class="hero__content--service fs__text">
                             <h3 class="section__title fs__section--title">Why Personal LinkedIn Management?
                             </h3>
-                            <p>For business owners and C-level executives, LinkedIn is a powerful platform to connect
+                            <p>For business owners and C-level executives, LinkedIn is a powerful platform to
+                                connect
                                 with
-                                prospects, customers, employees, peers, and shareholders. Presence on LinkedIn is not an
+                                prospects, customers, employees, peers, and shareholders. Presence on LinkedIn is
+                                not an
                                 option
-                                anymore. But sharing meaningful content unlocks new opportunities for business growth
+                                anymore. But sharing meaningful content unlocks new opportunities for business
+                                growth
                                 and
                                 personal
                                 branding.</p>
@@ -220,7 +242,7 @@
                                 narrative and...</p>
                         </div>
                     </div>
-                </section>
+                </article>
             </div>
         </div>
 
