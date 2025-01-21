@@ -862,8 +862,8 @@ label {
     }
 
     .main__services--grid {
-        display: flex;
-        justify-content: space-between;
+        /* display: flex;
+        justify-content: space-between; */
         display: grid;
         grid-template-columns: 1fr minmax(65%, 2fr);
         gap: 2rem;
@@ -883,24 +883,18 @@ label {
 
     .tab-btn {
         cursor: pointer;
-        margin-bottom: 1.25em;
-        padding: .35em .5em;
+        margin-bottom: 1.5em;
+        border: none;
         border-radius: .25rem;
         background: none;
-        border: none;
+        color: var(--clr-text);
+        text-transform: uppercase;
+        letter-spacing: .35px;
         font-size: .875rem;
         font-weight: 600;
         transform: translateX(0) scaleX(1);
         transition: all 1000ms step-start allow-discrete;
     }
-
-    .tab-btn a {
-        color: var(--clr-text);
-        text-transform: uppercase;
-        letter-spacing: .35px;
-        transition: all 200ms ease-in allow-discrete;
-    }
-
 
     span.line__style {
         display: inline-block;
@@ -908,17 +902,8 @@ label {
         font-weight: 100;
         line-height: 0;
         margin-right: 10px;
+        transition: all 200ms step-start allow-discrete;
     }
-
-    .tab-btn span:hover,
-    .tab-btn span:focus,
-    .tab-btn span:active {
-        color: var(--clr-white);
-        text-shadow: 0 .35px .35px var(--clr-yellow);
-        margin-right: 32px;
-        transform: scaleX(3);
-    }
-
 
     .tab-btn:hover,
     .tab-btn:focus,
@@ -928,7 +913,15 @@ label {
         color: var(--clr-white);
         text-shadow: .35px 0 .5px var(--clr-yellow);
         transform: translateX(20px);
-        transform-box: view-box;
+    }
+
+    .tab-btn>.line__style:hover,
+    .tab-btn>.line__style:focus,
+    .tab-btn>.line__style:active {
+        color: var(--clr-white);
+        text-shadow: 0 .35px .35px var(--clr-yellow);
+        margin-right: 32px;
+        transform: scaleX(3);
     }
 
 
@@ -940,6 +933,7 @@ label {
         width: 100%;
     }
 
+    .services__content:focus,
     .services__content:target {
         height: 100%;
         box-shadow: 0 0 .5em 0 var(--clr-white);
@@ -952,4 +946,3 @@ label {
     }
 
 }
-    
