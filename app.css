@@ -415,7 +415,7 @@ li.nav__item:active {
 
 .intro__grid {
     width: 100vw;
-    min-height: 60vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
