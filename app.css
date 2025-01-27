@@ -415,7 +415,7 @@ li.nav__item:active {
 
 .intro__grid {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -864,6 +864,10 @@ label {
 
 
 @media (min-width: 1200px) {
+
+    .intro__grid {
+        min-height: 100vh;
+    }
 
     .container__layout {
         width: 80%;
