@@ -603,7 +603,8 @@ li.nav__item:active {
 
 .team__img {
     max-width: 250px;
-    height: auto;
+    min-height: 350px;
+    object-fit: cover;
 }
 
 .img__border-radius {
@@ -904,6 +905,7 @@ label {
         margin-right: 10px;
         transition: all 200ms step-start allow-discrete;
     }
+
 
     .tab-btn:hover,
     .tab-btn:focus,
