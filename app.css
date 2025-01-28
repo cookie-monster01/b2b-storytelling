@@ -154,6 +154,13 @@ body {
     word-spacing: 2.5px;
 }
 
+.fs__services {
+    /* font-size: 1.35rem; */
+    font-size: clamp(1.1rem, .409rem + 3.8vw, 3rem);
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+
 .header__content {
     width: 100%;
     height: fit-content;
@@ -380,8 +387,7 @@ li.nav__item:active {
     color: var(--clr-purple);
 }
 
-.intro
-.services,
+.intro .services,
 .team,
 .contact,
 .thankyou {
@@ -415,8 +421,10 @@ li.nav__item:active {
 }
 
 .intro__grid {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -439,9 +447,14 @@ li.nav__item:active {
 }
 
 .brand__position {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: minmax(auto-fit, 1fr);
+    place-content: center;
+    place-items: center;
     padding: .8em 0;
 }
 
