@@ -380,6 +380,7 @@ li.nav__item:active {
     color: var(--clr-purple);
 }
 
+.intro
 .services,
 .team,
 .contact,
@@ -387,6 +388,7 @@ li.nav__item:active {
     position: relative;
     top: 6em;
 }
+
 
 .services,
 .team,
@@ -414,7 +416,7 @@ li.nav__item:active {
 
 .intro__grid {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,11 +428,14 @@ li.nav__item:active {
 .video__bg {
     position: absolute;
     z-index: -1;
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
     object-fit: cover;
+    aspect-ratio: 9/16;
     min-width: 100%;
-    min-height: auto;
+    min-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .brand__position {
@@ -744,12 +749,6 @@ label {
 }
 
 
-@media(max-width: 48rem) {
-    .video__bg {
-        aspect-ratio: 9/16;
-    }
-}
-
 @media (min-width: 48rem) {
 
     .header__content {
@@ -880,6 +879,10 @@ label {
         position: relative;
         top: 2em;
     } */
+
+    .intro__grid {
+        margin-top: 2em;
+    }
 
     .container__layout {
         width: 80%;
