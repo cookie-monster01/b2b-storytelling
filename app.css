@@ -110,7 +110,7 @@ body {
 .brand__name {
     font-size: clamp(1.5rem, .465rem + 7.77vw, 4.35rem);
     font-weight: 900;
-    color: var(--clr-purple);
+    color: var(--clr-white);
     /* text-wrap: nowrap; */
     /* margin-bottom: .6em; */
 }
@@ -126,7 +126,7 @@ body {
 
 .fs__main--title {
     font-size: clamp(1.75rem, 1.515rem + 2.06vw, 2.4rem);
-    color: var(--clr-purple);
+    color: var(--clr-white);
     text-align: center;
     text-transform: uppercase;
 }
@@ -380,7 +380,6 @@ li.nav__item:active {
     color: var(--clr-purple);
 }
 
-
 .services,
 .team,
 .contact,
@@ -404,14 +403,14 @@ li.nav__item:active {
     place-items: center;
 }
 
-/* .bg__accent {
+.bg__accent {
     width: 100vw;
     min-height: 24rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--clr-white);
-} */
+    /* background: var(--clr-white); */
+}
 
 .intro__grid {
     width: 100vw;
@@ -429,8 +428,9 @@ li.nav__item:active {
     z-index: -1;
     bottom: 0;
     right: 0;
+    object-fit: cover;
     min-width: 100%;
-    min-height: 100%;
+    min-height: auto;
 }
 
 .brand__position {
@@ -743,6 +743,13 @@ label {
     }
 }
 
+
+@media(max-width: 48rem) {
+    .video__bg {
+        aspect-ratio: 9/16;
+    }
+}
+
 @media (min-width: 48rem) {
 
     .header__content {
@@ -773,6 +780,10 @@ label {
     .nav__item+.nav__item {
         margin-top: 0;
         margin-left: 1.5em;
+    }
+
+    .video__bg {
+        aspect-ratio: 16/9;
     }
 
     /* .intro__grid {
@@ -865,10 +876,10 @@ label {
 
 @media (min-width: 1200px) {
 
-    .intro {
+    /* .intro {
         position: relative;
         top: 2em;
-    }
+    } */
 
     .container__layout {
         width: 80%;
