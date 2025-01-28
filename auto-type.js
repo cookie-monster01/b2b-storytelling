@@ -1,12 +1,12 @@
 const dynamicText = document.querySelector(".auto-type");
 const services = [
-  "Brand Building",
-  "Differentiation",
-  "Customer Experience",
-  "Customer Acquisition",
   "Sales Growth",
-  "New Market Entry",
+  "Customer Acquisition",
+  "Brand Building",
   "New Product Launch",
+  "Differentiation",
+  "New Market Entry",
+  "Customer Experience"
 ];
 
 let servicesWordIndex = 0;
@@ -20,14 +20,25 @@ const typeEffect = () => {
 
   if (!isDeleting && wordCharIndex < currentWord.length) {
     wordCharIndex++;
-    setTimeout(typeEffect, 200);
+    setTimeout(typeEffect, 50);
   } else if (isDeleting && wordCharIndex > 0) {
     wordCharIndex--;
-    setTimeout(typeEffect, 100);
-  }else {
+    setTimeout(typeEffect, 25);
+  } else {
     isDeleting = !isDeleting;
-    servicesWordIndex = !isDeleting ? (servicesWordIndex + 1) % services.length : servicesWordIndex;
-    setTimeout(typeEffect, 1200);
+    servicesWordIndex = !isDeleting
+      ? (servicesWordIndex + 1) % services.length
+      : servicesWordIndex;
+    // setTimeout(typeEffect, 1500);
+    // Jacek added:
+    if (isDeleting) {
+        // word on screen (keep for 1500ms)
+        setTimeout(typeEffect, 1500);
+    } else {
+        // empty string (keep empty for 300ms)
+        setTimeout(typeEffect, 300);
+    }
+    // end Jacek added
   }
 };
 
