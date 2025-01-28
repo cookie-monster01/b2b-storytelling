@@ -131,6 +131,12 @@ body {
     text-transform: uppercase;
 }
 
+.main__title--services,
+.main__title--contact,
+.main__title--team {
+    color: var(--clr-purple);
+}
+
 .fs__section--header {
     font-size: clamp(1.325rem, 1.17rem + 1.02vw, 1.75rem);
     color: var(--clr-white);
@@ -156,8 +162,8 @@ body {
 
 .fs__services {
     /* font-size: 1.35rem; */
-    font-size: clamp(1.1rem, .409rem + 3.8vw, 3rem);
-    text-transform: uppercase;
+    font-size: clamp(1.25rem, .432rem + 5.11vw, 3.5rem);
+    text-transform: capitalize;
     word-spacing: 4px;
 }
 
@@ -387,7 +393,7 @@ li.nav__item:active {
     color: var(--clr-purple);
 }
 
-.intro .services,
+.services,
 .team,
 .contact,
 .thankyou {
@@ -926,6 +932,11 @@ label {
         inset-block-start: 8.75em;
     }
 
+    .tab-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
     .tab-btn {
         cursor: pointer;
@@ -938,17 +949,18 @@ label {
         letter-spacing: .35px;
         font-size: .875rem;
         font-weight: 600;
-        transform: translateX(0) scaleX(1);
-        transition: all 1000ms step-start allow-discrete;
+        /* transform: translateX(0) scaleX(1);
+        transition: all 1000ms step-start allow-discrete; */
     }
 
     span.line__style {
-        display: inline-block;
+        display: none;
+        /* display: inline-block;
         font-size: 1.5rem;
         font-weight: 100;
         line-height: 0;
         margin-right: 10px;
-        transition: all 200ms step-start allow-discrete;
+        transition: all 200ms step-start allow-discrete; */
     }
 
 
@@ -957,19 +969,19 @@ label {
     .tab-btn:active {
         font-size: 1rem;
         font-weight: 700;
-        color: var(--clr-white);
+        color: var(--clr-yellow);
         text-shadow: .35px 0 .5px var(--clr-yellow);
-        transform: translateX(20px);
+        /* transform: translateX(20px); */
     }
 
-    .tab-btn>.line__style:hover,
+    /* .tab-btn>.line__style:hover,
     .tab-btn>.line__style:focus,
     .tab-btn>.line__style:active {
         color: var(--clr-white);
         text-shadow: 0 .35px .35px var(--clr-yellow);
         margin-right: 32px;
         transform: scaleX(3);
-    }
+    } */
 
 
     .highlight {
