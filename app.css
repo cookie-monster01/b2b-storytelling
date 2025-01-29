@@ -945,7 +945,7 @@ label {
         align-items: flex-start;
     }
 
-    a.tab-btn {
+    .tab-btn {
         cursor: pointer;
         margin-bottom: 1.5em;
         border: none;
