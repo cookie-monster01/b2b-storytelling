@@ -687,7 +687,7 @@ li.nav__item:active {
 
 .form__grid {
     display: grid;
-    grid-template-rows: auto-fit, 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: minmax(18.75rem, 32rem);
     gap: .35rem;
     margin-bottom: 1em;
@@ -756,6 +756,10 @@ label {
 
 .req {
     color: red;
+}
+
+.attribution {
+    display: none;
 }
 
 @keyframes scroll {
