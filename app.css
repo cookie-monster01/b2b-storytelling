@@ -947,15 +947,12 @@ label {
 
     .tab-btn {
         cursor: pointer;
-        margin-bottom: 1.5em;
-        border: none;
-        border-radius: .25rem;
-        background: none;
         color: var(--clr-text);
         text-transform: uppercase;
         letter-spacing: .35px;
         font-size: .875rem;
         font-weight: 600;
+        margin-bottom: 1.5em;
         /* transform: translateX(0) scaleX(1);
         transition: all 1000ms step-start allow-discrete; */
     }
@@ -993,7 +990,6 @@ label {
         color: var(--clr-yellow);
         text-shadow: .35px 0 .5px var(--clr-yellow);
     }
-
 
     /* .tab-btn>.line__style:hover,
     .tab-btn>.line__style:focus,
