@@ -971,8 +971,8 @@ label {
     }
 
 
-    a.tab-btn:hover,
-    a.tab-btn:focus {
+    .tab-btn:hover,
+    .tab-btn:focus {
         font-size: 1rem;
         font-weight: 700;
         color: var(--clr-yellow);
@@ -980,7 +980,14 @@ label {
         /* transform: translateX(20px); */
     }
 
-    a.tab-btn:active {
+    .tab-btn a:focus {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--clr-yellow);
+        /* text-shadow: .35px 0 .5px var(--clr-yellow); */
+    }
+
+    .tab-btn a:active {
         font-size: 1rem;
         font-weight: 700;
         color: var(--clr-yellow);
