@@ -29,16 +29,13 @@ const typeEffect = () => {
     servicesWordIndex = !isDeleting
       ? (servicesWordIndex + 1) % services.length
       : servicesWordIndex;
-    // setTimeout(typeEffect, 1500);
-    // Jacek added:
+    
     if (isDeleting) {
-        // word on screen (keep for 1500ms)
+       
         setTimeout(typeEffect, 1500);
     } else {
-        // empty string (keep empty for 300ms)
         setTimeout(typeEffect, 300);
     }
-    // end Jacek added
   }
 };
 
