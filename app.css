@@ -938,8 +938,8 @@ label {
     .tab__list {
         display: block;
         position: sticky;
-        /* inset-block-start: 8.75em; */
-        inset-block-start: 12em;
+        inset-block-start: 8.75em;
+        /* inset-block-start: 12em; */
     }
 
     .tab-btns {
