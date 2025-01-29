@@ -1,0 +1,218 @@
+/* .row__icon { ------------ service dropdown, and service dropdown converted to tabs for large-screen
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    font: inherit;
+    font-weight: 900;
+    color: var(--clr-purple);
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    background: var(--clr-white);
+    padding: .75rem;
+    border-radius: .25rem;
+    display: none;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out;
+}
+
+.dropdown-content li {
+    list-style: none;
+    margin-bottom: .3em;
+}
+
+.dropdown.active>.dropbtn+.dropdown-content {
+    display: block;
+    transform: translateY(0);
+    pointer-events: auto;
+    border: 1px solid var(--clr-purple);
+}
+
+.dropdown.active .dropbtn {
+    margin-bottom: .35em;
+}
+
+.nav__item:hover,
+.nav__item:active,
+.dropdown.active>.dropbtn {
+    opacity: .8;
+}
+
+.nav__item:is([data-dropdown]) {
+    opacity: 1;
+}
+
+.dropbtn svg {
+    rotate: 0deg;
+    display: inline-block;
+    transition: .3s ease;
+}
+
+.dropbtn:hover svg {
+    rotate: -180deg;
+}
+
+.dropdown .dropdown-content li a {
+    font-size: .85rem;
+    color: var(--clr-purple);
+    padding: .75em 1em;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown.active li:hover {
+    background: var(--clr-text);
+    box-shadow: 0 .25em .25em 0 var(--clr-purple-opacity);
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.dropdown-content li:last-of-type {
+    margin-bottom: 0;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tab {
+    cursor: pointer;
+}
+
+.tab.active {
+    cursor: pointer;
+    background: var(--clr-yellow-light);
+    box-shadow: 0 .15em .25em 0 var(--clr-purple-opacity);
+    border-radius: .25rem;
+    width: 100%;
+} */
+
+
+  /* .dropdown-content { -------  service dropdown + tabs at min-width of 48rem
+        position: absolute;
+        width: fit-content;
+        left: -8rem;
+        top: calc(100% + .3rem);
+        top: calc(100% - .5rem);
+        margin-inline: auto;
+        transform: translateX(0);
+    }
+
+    .dropdown.active .dropbtn {
+        margin-bottom: 0;
+    }
+
+    .dropdown.active>.dropbtn+.dropdown-content {
+        display: flex;
+        transform: translateX(-15.75rem);
+        border-bottom: none;
+    }
+
+    .dropdown.active .dropdown-content .nav__link {
+        text-wrap: nowrap;
+    }
+
+    .dropdown-content li {
+        margin-bottom: 0;
+    }
+
+    .dropdown-content li {
+        margin-inline: .2em;
+    }
+
+    .dropbtn {
+        margin-bottom: 0;
+    }
+
+    .dropdown.active li:hover {
+        opacity: 1;
+        background: var(--clr-white);
+    } */
+
+
+
+
+/* .bg__accent { ---------- container color white when scrollers were used
+    width: 100vw;
+    min-height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--clr-white);
+} */
+
+/* 
+.list__item--bg { ------------------for scrollers on index.html
+    background: var(--clr-purple);
+    color: var(--clr-yellow);
+    padding: .75em;
+}
+
+.scroller {
+    max-width: 825px;
+    margin: 0 auto;
+}
+
+.scroller__inner {
+    padding-block: 1rem;
+    padding-inline: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white, white, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-duration, forwards) linear infinite;
+
+}
+
+.scroller[data-direction="left"] {
+    --_animation-duration: forwards;
+} */
+
+
+
+/* .fs__main--title { -------- old font-size
+  font-size: clamp(1.75rem, 1.515rem + 2.06vw, 2.4rem);
+} */
+
+/* 
+.fs__services{
+    font-size: clamp(1.25rem, .432rem + 5.11vw, 3.5rem);
+} */
+
+/* .services__content {
+     scroll-margin-top: 8rem;
+} */
+
+/* @keyframes scroll {
+    to {
+        transform: translate(-75%);
+    }
+} */
