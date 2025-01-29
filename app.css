@@ -260,12 +260,16 @@ body {
 .nav__item {
     /* padding: .35em; */
     padding: .4em;
+    transition: opacity 0.3s;
 }
 
-.nav__item:hover,
-.nav__item:focus,
-.nav__item:active {
-    opacity: 8;
+.nav__link:hover,
+.nav__link:focus {
+    opacity: .8;
+}
+
+.nav__link:active {
+    opacity: .75;
 }
 
 .nav__link {
