@@ -945,7 +945,7 @@ label {
         align-items: flex-start;
     }
 
-    .tab-btn {
+    a.tab-btn {
         cursor: pointer;
         margin-bottom: 1.5em;
         border: none;
@@ -971,15 +971,22 @@ label {
     }
 
 
-    .tab-btn:hover,
-    .tab-btn:focus,
-    .tab-btn:active {
+    a.tab-btn:hover,
+    a.tab-btn:focus {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--clr-yellow);
+        /* text-shadow: .35px 0 .5px var(--clr-yellow); */
+        /* transform: translateX(20px); */
+    }
+
+    a.tab-btn:active {
         font-size: 1rem;
         font-weight: 700;
         color: var(--clr-yellow);
         text-shadow: .35px 0 .5px var(--clr-yellow);
-        /* transform: translateX(20px); */
     }
+
 
     /* .tab-btn>.line__style:hover,
     .tab-btn>.line__style:focus,
