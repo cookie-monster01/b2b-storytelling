@@ -600,7 +600,10 @@ body {
     padding: 2.5em 0 2em;
     /* padding: 2em 0; */
     border-bottom: 2px solid var(--clr-white);
-    scroll-margin-top: 8rem;
+    /* scroll-margin-top: 8rem; */
+    
+    scroll-margin-block: 4.5rem;
+   
 }
 
 
