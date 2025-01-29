@@ -262,17 +262,23 @@ body {
     padding: .4em;
 }
 
-li.nav__item:hover,
-li.nav__item:focus,
-li.nav__item:active {
+/* .nav__item:hover,
+.nav__item:focus,
+.nav__item:active {
     opacity: 8;
-}
+} */
 
 .nav__link {
     color: var(--clr-purple);
     font-weight: 900;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav__link:active {
+    opacity: 8;
 }
 
 .link__item {
