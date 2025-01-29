@@ -125,7 +125,8 @@ body {
 }
 
 .fs__main--title {
-    font-size: clamp(1.75rem, 1.515rem + 2.06vw, 2.4rem);
+    /* font-size: clamp(1.75rem, 1.515rem + 2.06vw, 2.4rem); */
+    font-size: clamp(1.325rem, .534rem + 5.24vw, 3.5rem);
     color: var(--clr-white);
     text-align: center;
     text-transform: uppercase;
@@ -161,8 +162,9 @@ body {
 }
 
 .fs__services {
-    /* font-size: 1.35rem; */
-    font-size: clamp(1.25rem, .432rem + 5.11vw, 3.5rem);
+    /* font-size: 1.35rem; 15.09 - 56.60  = 2.175/41.51, 0.05239*/
+    /* font-size: clamp(1.25rem, .432rem + 5.11vw, 3.5rem); */
+    font-size: clamp(1.325rem, .534rem + 5.24vw, 3.5rem);
     text-transform: capitalize;
     word-spacing: 4px;
 }
