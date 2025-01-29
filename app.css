@@ -928,7 +928,7 @@ label {
         display: grid;
         grid-template-columns: 1fr minmax(65%, 2fr);
         gap: 2rem;
-        padding: 3.5em 0 5.25em;
+        padding: 2.5em 0 5.25em;
     }
 
     .tabs-container {
@@ -938,8 +938,9 @@ label {
     .tab__list {
         display: block;
         position: sticky;
-        inset-block-start: 8.75em;
+        /* inset-block-start: 8.75em; */
         /* inset-block-start: 12em; */
+        inset-block-start: 10em;
     }
 
     .tab-btns {
