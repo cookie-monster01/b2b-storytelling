@@ -1,12 +1,12 @@
  // setTimeout(typeEffect, 1500);
     // Jacek added:
-    if (isDeleting) {
+    // if (isDeleting) {
         // word on screen (keep for 1500ms)
-        setTimeout(typeEffect, 1500);
-    } else {
+        // setTimeout(typeEffect, 1500);
+    // } else {
         // empty string (keep empty for 300ms)
-        setTimeout(typeEffect, 300);
-    }
+    //     setTimeout(typeEffect, 300);
+    // }
     // end Jacek added
   
 
