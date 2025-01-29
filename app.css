@@ -911,7 +911,8 @@ label {
     } */
 
     .intro__grid {
-        margin-top: 2em;
+        /* margin-top: 2em; */
+        margin-top: 1em;
     }
 
     .container__layout {
