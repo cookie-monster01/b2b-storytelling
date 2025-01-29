@@ -928,7 +928,7 @@ label {
         display: grid;
         grid-template-columns: 1fr minmax(65%, 2fr);
         gap: 2rem;
-        padding: 2.5em 0 5.25em;
+        padding: 3.5em 0 5.25em;
     }
 
     .tabs-container {
