@@ -975,16 +975,16 @@ label {
     .tab-btn:focus {
         font-size: 1rem;
         font-weight: 700;
-        color: var(--clr-yellow);
-        /* text-shadow: .35px 0 .5px var(--clr-yellow); */
+        color: var(--clr-white);
+        text-shadow: .35px 0 .5px var(--clr-yellow);
         /* transform: translateX(20px); */
     }
 
     .tab-btn a:focus {
         font-size: 1rem;
         font-weight: 700;
-        color: var(--clr-yellow);
-        /* text-shadow: .35px 0 .5px var(--clr-yellow); */
+        color: var(--clr-white);
+        text-shadow: .35px 0 .5px var(--clr-yellow);
     }
 
     .tab-btn a:active {
