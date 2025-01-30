@@ -146,7 +146,7 @@ body {
 }
 
 .fs__text {
-    font-size: clamp(.975rem, .930rem + .22vw, 1.1rem);
+    font-size: clamp(1rem, .964rem + .18vw, 1.1rem);
 }
 
 .fs__team--name {
