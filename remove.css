@@ -212,6 +212,18 @@
      font-size: clamp(.975rem, .930rem + .22vw, 1.1rem);
 } */
 
+/* .video__bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    aspect-ratio: 9/16;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+} */
 
 /* .services__content {
      scroll-margin-top: 8rem;
