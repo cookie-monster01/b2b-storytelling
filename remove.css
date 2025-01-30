@@ -209,6 +209,7 @@
 
 /* .fs__text {
     font-size: clamp(.925rem, .862rem + .29vw, 1.1rem);
+     font-size: clamp(.975rem, .930rem + .22vw, 1.1rem);
 } */
 
 
