@@ -431,12 +431,7 @@ body {
     justify-content: center;
     padding: 2.5em 0 2em;
     border-bottom: 2px solid var(--clr-white);
-    /* scroll-margin-block: 5.5rem;
-    scroll-margin-block: 4.5rem; */
-
     scroll-margin-top: 7rem;
-    scroll-margin-bottom: 6rem;
-   
 }
 
 
@@ -700,7 +695,7 @@ label {
         display: grid;
         grid-template-columns: 1fr minmax(65%, 2fr);
         gap: 2rem;
-        padding: 3.5em 0 5.25em;
+        padding: 3.5em 0 5.5em;
     }
 
     .tabs-container {
