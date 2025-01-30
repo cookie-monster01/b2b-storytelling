@@ -315,19 +315,6 @@ body {
     overflow: hidden;
 }
 
-.video__bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    aspect-ratio: 9/16;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-}
-
 .brand__position {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -338,7 +325,7 @@ body {
 }
 
 .main__title--small {
-    margin: 1.5em 0 1em;
+    margin: 1em 0 .75em;
 }
 
 .main__title {
