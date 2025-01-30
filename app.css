@@ -124,7 +124,7 @@ body {
     font-size: clamp(1.325rem, .534rem + 5.24vw, 3.5rem);
     color: var(--clr-white);
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .fs__main--title {
