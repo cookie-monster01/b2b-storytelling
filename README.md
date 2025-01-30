@@ -22,7 +22,7 @@
 ### My Learnings from th project.
 
 * I learnt a little more about pseudo-classes and pseudo-elements.
-* CSS attributes while working with JavaScript eg: [data-tab-target].
+* CSS attributes while working with JavaScript eg: [data-tab-target] .
 * CSS Combinators eg: 
 
 ```
@@ -36,4 +36,5 @@
 * [Link for Dropdown:] (https://www.youtube.com/watch?v=S-VeYcOCFZw)
 * [Link for Tabs:] (https://www.youtube.com/watch?v=5L6h_MrNvsk)
 * [Link for Scrollers:] (https://www.youtube.com/watch?v=iLmBy-HKIAw) 
+* [Link for Auto-Typing:] (https://www.youtube.com/watch?v=DLs1X9T1GcY)
 
