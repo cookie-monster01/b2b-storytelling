@@ -207,6 +207,11 @@
     font-size: clamp(1.25rem, .432rem + 5.11vw, 3.5rem);
 } */
 
+/* .fs__text {
+    font-size: clamp(.925rem, .862rem + .29vw, 1.1rem);
+} */
+
+
 /* .services__content {
      scroll-margin-top: 8rem;
 } */

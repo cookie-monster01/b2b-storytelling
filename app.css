@@ -146,7 +146,7 @@ body {
 }
 
 .fs__text {
-    font-size: clamp(.925rem, .862rem + .29vw, 1.1rem);
+    font-size: clamp(.975rem, .930rem + .22vw, 1.1rem);
 }
 
 .fs__team--name {
@@ -431,7 +431,11 @@ body {
     justify-content: center;
     padding: 2.5em 0 2em;
     border-bottom: 2px solid var(--clr-white);
-    scroll-margin-block: 5.5rem;
+    /* scroll-margin-block: 5.5rem;
+    scroll-margin-block: 4.5rem; */
+
+    scroll-margin-top: 7rem;
+    scroll-margin-bottom: 6rem;
    
 }
 
